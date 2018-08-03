@@ -155,7 +155,7 @@ static SweetAlertDialog pDialog = null;
         pDialog.setCancelable(false);
         pDialog.show();
         Log.d("addProductData",product.getProductId()+" "+variantId+" "+variantName+" "+variantPrice+" "+product.getProductName()+" "+ quantity);
-        String req = "{\"res_id\":\"res007\",\"product_id\":\""+ product.getProductId() +"\",\"userid\":\"" + MainActivity.userId + "\",\"varient_id\":\""+ variantId +"\",\"varient_quantity\":\""+ quantity + "" +"\",\"json_param\":\""+ extraJsonArray.toString() +"\",\"varient_name\":\""+ variantName +"\",\"varient_price\":\"" + variantPrice + "\",\"product_name\":\""+product.getProductName() +"\"}";
+        String req = "{\"res_id\":\"res007\",\"product_id\":\""+ product.getProductId() +"\",\"userid\":\"" + MainActivity.userId + "\",\"varient_id\":\""+ variantId +"\",\"varient_quantity\":\""+ quantity + "" +"\",\"json_param\":"+ extraJsonArray.toString() +",\"varient_name\":\""+ variantName +"\",\"varient_price\":\"" + variantPrice + "\",\"product_name\":\""+product.getProductName() +"\"}";
         Volley_Request postRequest = new Volley_Request();
         postRequest.createRequest(ProductExtra.this, getResources().getString(R.string.mJSONURL_addcart), "POST", "addcart", req);
 

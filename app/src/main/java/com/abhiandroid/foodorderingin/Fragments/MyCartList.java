@@ -195,6 +195,7 @@ public static Activity activity;
             pDialog.dismissWithAnimation();
             JSONObject cartObj = new JSONObject(response);
             JSONArray PArr = cartObj.getJSONArray("products");
+            productsData = new ArrayList<>();
             for(int i=0; i< PArr.length(); i++) {
                 JSONObject jObj = PArr.getJSONObject(i);
                 List<String> imageList = new ArrayList<>();
@@ -218,7 +219,6 @@ public static Activity activity;
                     extraList.add(new Extra(extra.getString("extraid"), extra.getString("extraname"), extra.getString("extraprice")));
                 }
                 CartProducts p = new CartProducts(jObj.getString("productId"), "", jObj.getString("plimit"), "", jObj.getString("productName"), "","", "", jObj.getString("primaryimage"), "", "", "","",variantList.get(0), imageList, extraList);
-                productsData = new ArrayList<>();
                 productsData.add(p);
                 //Log.d("myTag", "added another : " + productsData.get(j).getVariants().getVarprice());
 

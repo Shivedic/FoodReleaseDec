@@ -143,11 +143,13 @@ if(productList.get(position).getVariants() != null) {
 
         }
 //Log.d("myTag", "prodctlist : " + productList.get(position). );
-        if (productList.get(position).getVariants().size() < 2) {
-            holder.variantCount.setText("No more variant");
-        } else {
-            holder.variantCount.setText((productList.get(position).getVariants().size() - 1) + " more variant");
+        if(productList.get(position).getVariants() != null ) {
+            if (productList.get(position).getVariants().size() < 2) {
+                holder.variantCount.setText("No more variant");
+            } else {
+                holder.variantCount.setText((productList.get(position).getVariants().size() - 1) + " more variant");
 
+            }
         }
         holder.variantsLayout.setOnClickListener(new View.OnClickListener() {
             @Override
