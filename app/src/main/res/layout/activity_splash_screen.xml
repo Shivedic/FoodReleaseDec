@@ -3,14 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.abhiandroid.foodorderingin.Activities.SplashScreen">
+    android:background="@color/color_white"
+    tools:context="com.shivedic.foodveda.Activities.SplashScreen">
 
     <ImageView
         android:id="@+id/splashImage"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="348dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="99dp"
         android:scaleType="fitXY"
-        android:src="@drawable/splashscreen" />
+        android:src="@drawable/food_app_logo1" />
 
     <LinearLayout
         android:id="@+id/internetNotAvailable"

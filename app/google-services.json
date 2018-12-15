@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "209000529500",
-    "firebase_url": "https://playstore/food-ordering-in.firebaseio.com",
-    "project_id": "food-ordering-in",
-    "storage_bucket": "food-ordering-in.appspot.com"
+    "project_number": "934147016186",
+    "firebase_url": "https://foodveda-shivedic.firebaseio.com",
+    "project_id": "foodveda-shivedic",
+    "storage_bucket": "foodveda-shivedic.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:209000529500:android:c76a84ee408d85c8",
+        "mobilesdk_app_id": "1:934147016186:android:6ed66c2e8c3fce30",
         "android_client_info": {
-          "package_name": "com.abhiandroid.foodorderingin"
+          "package_name": "com.shivedic.foodveda"
         }
       },
       "oauth_client": [
         {
-          "client_id": "209000529500-lp1kl12edcajv1n429jsjokd8o0qkhuk.apps.googleusercontent.com",
+          "client_id": "934147016186-apb7805nt8unsqa4o7pr59fhmvoalq9s.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCD3R9yRdnEAfmfQeIrHXUzEhcTliR7Uzo"
+          "current_key": "AIzaSyBNj6chZPNMByXHbkMeYlSOoud4m55QeYM"
         }
       ],
       "services": {

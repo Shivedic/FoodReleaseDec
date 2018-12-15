@@ -133,32 +133,30 @@
     <string name="Logout">Logout</string>
     <string name="Update">Update</string>
     <string name="Flat">Flat no., Building name *</string>
-<string name="mJSONURL_catlist">http://shivedic.in/JSON/pbyc.php </string>
-    <string name="mJSONURL_recommproduct">http://shivedic.in/JSON/recom.php </string>
-    <string name="mJSONURL_restaurantdetail">http://shivedic.in/JSON/resdetails.php </string>
-    <string name="mJSONURL_FAQ">http://shivedic.in/JSON/faq.php </string>
-    <string name="mJSONURL_terms">http://shivedic.in/JSON/terms.php </string>
-    <string name="mJSONURL_pushaddr">http://shivedic.in/JSON/pushadd.php </string>
-    <string name="mJSONURL_addwishlist">http://shivedic.in/JSON/addwishlist.php </string>
-    <string name="mJSONURL_addcart">http://shivedic.in/JSON/add-cart.php </string>
-    <string name="mJSONURL_deletecart">http://shivedic.in/JSON/deletecart.php </string>
-    <string name="mJSONURL_wishcheck">http://shivedic.in/JSON/wishcheck.php </string>
-    <string name="mJSONURL_wishlist">http://shivedic.in/JSON/wishlist.php </string>
-    <string name="mJSONURL_viewordersdetails">http://shivedic.in/JSON/vieworders.php </string>
-    <string name="mJSONURL_viewcart">http://shivedic.in/JSON/viewcart.php </string>
-    <string name="mJSONURL_userprofile">http://shivedic.in/JSON/userprofile.php </string>
-    <string name="mJSONURL_updateprofile">http://shivedic.in/JSON/updateprofile.php </string>
-    <string name="mJSONURL_resentmail">http://shivedic.in/JSON/resentmail.php </string>
-    <string name="mJSONURL_login">http://shivedic.in/JSON/login.php </string>
-    <string name="mJSONURL_addorders">http://shivedic.in/JSON/addorders.php </string>
-    <string name="mJSONURL_forgot">http://shivedic.in/JSON/forgot.php </string>
-    <string name="mJSONURL_register">http://shivedic.in/JSON/register.php </string>
+    <string name="mJSONURL_catlist">http://shivedic.in/foodveda/JSON/pbyc.php </string>
+    <string name="mJSONURL_recommproduct">http://shivedic.in/foodveda/JSON/recom.php </string>
+    <string name="mJSONURL_restaurantdetail">http://shivedic.in/foodveda/JSON/resdetails.php </string>
+    <string name="mJSONURL_FAQ">http://shivedic.in/foodveda/JSON/faq.php </string>
+    <string name="mJSONURL_terms">http://shivedic.in/foodveda/JSON/terms.php </string>
+    <string name="mJSONURL_pushaddr">http://shivedic.in/foodveda/JSON/pushadd.php </string>
+    <string name="mJSONURL_addwishlist">http://shivedic.in/foodveda/JSON/addwishlist.php </string>
+    <string name="mJSONURL_addcart">http://shivedic.in/foodveda/JSON/add-cart.php </string>
+    <string name="mJSONURL_deletecart">http://shivedic.in/foodveda/JSON/deletecart.php </string>
+    <string name="mJSONURL_wishcheck">http://shivedic.in/foodveda/JSON/wishcheck.php </string>
+    <string name="mJSONURL_wishlist">http://shivedic.in/foodveda/JSON/wishlist.php </string>
+    <string name="mJSONURL_viewordersdetails">http://shivedic.in/foodveda/JSON/vieworders.php </string>
+    <string name="mJSONURL_viewcart">http://shivedic.in/foodveda/JSON/viewcart.php </string>
+    <string name="mJSONURL_userprofile">http://shivedic.in/foodveda/JSON/userprofile.php </string>
+    <string name="mJSONURL_updateprofile">http://shivedic.in/foodveda/JSON/updateprofile.php </string>
+    <string name="mJSONURL_resentmail">http://shivedic.in/foodveda/JSON/resentmail.php </string>
+    <string name="mJSONURL_login">http://shivedic.in/foodveda/JSON/login.php </string>
+    <string name="mJSONURL_addorders">http://shivedic.in/foodveda/JSON/addorders.php </string>
+    <string name="mJSONURL_forgot">http://shivedic.in/foodveda/JSON/forgot.php </string>
+    <string name="mJSONURL_register">http://shivedic.in/foodveda/JSON/register.php </string>
 
 
-
-
-
-
-    <string name="mJSONURL_product">http://shivedic.in/JSON/allitem.php </string>
+    <string name="mJSONURL_product">http://shivedic.in/foodveda/JSON/allitem.php </string>
+    <string name="Continue">Continue</string>
+    <string name="skip">Skip</string>
 
 </resources>

@@ -1,0 +1,70 @@
+package com.shivedic.foodveda.MVP;
+
+import android.util.Log;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Extra {
+
+    public String getExtraid() {
+        return extraid;
+    }
+
+    public void setExtraid(String extraid) {
+        this.extraid = extraid;
+    }
+
+    private String extraid;
+    private String extraname;
+    private String extraprice;
+
+    public Extra(String extraid, String extraname, String extraprice, String extraquantity){
+        this.extraid = extraid;
+        this.extraname = extraname;
+        Log.d("myTag","setting extraprice : " + extraprice);
+        this.extraprice = extraprice;
+        this.extraquantity = extraquantity;
+    }
+
+    public Extra(String extraid, String extraname, String extraprice){
+        this.extraid = extraid;
+        this.extraname = extraname;
+        Log.d("myTag","setting extraprice : " + extraprice);
+        this.extraprice = extraprice;
+    }
+    public String getExtraquantity() {
+        return extraquantity;
+    }
+
+    public void setExtraquantity(String extraquantity) {
+        this.extraquantity = extraquantity;
+    }
+
+    private String extraquantity;
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+    public String getExtraname() {
+        return extraname;
+    }
+
+    public void setExtraname(String extraname) {
+        this.extraname = extraname;
+    }
+
+    public String getExtraprice() {
+        return extraprice;
+    }
+
+    public void setExtraprice(String extraprice) {
+        this.extraprice = extraprice;
+    }
+
+    public Map<String, Object> getAdditionalProperties() {
+        return this.additionalProperties;
+    }
+
+    public void setAdditionalProperty(String name, Object value) {
+        this.additionalProperties.put(name, value);
+    }
+}

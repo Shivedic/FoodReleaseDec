@@ -9,10 +9,6 @@
                 android:icon="@drawable/profile_icon"
                 android:title="My Profile" />
             <item
-                android:id="@+id/myFavorite"
-                android:icon="@drawable/favorited_icon"
-                android:title="My Favorite" />
-            <item
                 android:id="@+id/myCart"
                 android:icon="@drawable/menu_cart_icon"
                 android:title="My Cart" />

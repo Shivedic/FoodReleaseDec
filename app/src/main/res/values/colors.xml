@@ -14,5 +14,5 @@
     <color name="lighter_red">#b64e5a</color>
     <color name="tabsColor">#062A82</color>
     <color name="light_white">#F0F0F0</color>
-
+    <color name="transparent">#00ff0000</color>
 </resources>

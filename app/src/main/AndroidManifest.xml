@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.abhiandroid.foodorderingin">
+    package="com.shivedic.foodveda">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" tools:node="remove"/>
     <uses-permission
         android:name="android.permission.READ_PHONE_STATE"
         tools:node="remove" />
@@ -19,25 +20,26 @@
     <uses-permission
         android:name="android.permission.CAMERA"
         tools:node="remove" />
+
     <permission
-        android:name="com.abhiandroid.foodorderingin.permission.C2D_MESSAGE"
+        android:name="com.shivedic.foodveda.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
     <application
         android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
-        android:icon="@drawable/food_app_icon"
+        android:icon="@drawable/food_app_logo1"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:roundIcon="@drawable/food_app_icon"
+        android:roundIcon="@drawable/food_app_logo1"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
         <activity
-            android:name="com.abhiandroid.foodorderingin.Activities.MainActivity"
+            android:name=".Activities.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.abhiandroid.foodorderingin.Activities.SplashScreen"
+            android:name=".Activities.SplashScreen"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -47,50 +49,52 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.abhiandroid.foodorderingin.Activities.Login"
+            android:name=".Activities.Login"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.abhiandroid.foodorderingin.Activities.SignUp"
+            android:name=".Activities.SignUp"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.abhiandroid.foodorderingin.Activities.ForgotPassword"
+            android:name=".Activities.ForgotPassword"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.abhiandroid.foodorderingin.Activities.ProductExtra"
+            android:name=".Activities.ProductExtra"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.abhiandroid.foodorderingin.Activities.EditCart"
+            android:name=".Activities.EditCart"
             android:screenOrientation="portrait" />
-
-        <activity android:name="com.abhiandroid.foodorderingin.PaymentIntegrationMethods.OrderConfirmed" />
-        <activity android:name="com.abhiandroid.foodorderingin.PaymentIntegrationMethods.RazorPayIntegration" />
+        <activity android:name=".PaymentIntegrationMethods.OrderConfirmed" />
+        <activity android:name=".PaymentIntegrationMethods.RazorPayIntegration" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDagu1__IQVkCjlGIGYkbdUf-JcJ0hofZ0" />
-        <activity
-            android:name="com.abhiandroid.foodorderingin.Activities.MapViewActivity"
-            android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".Activities.MapViewActivity"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="com.razorpay.ApiKey"
             android:value="rzp_test_mhbXTaVbcAvqbQ" />
         <!-- Firebase Notifications -->
-        <service android:name="com.abhiandroid.foodorderingin.FCM.MyFirebaseMessagingService">
+        <service android:name=".FCM.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true"
+            >
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name="com.abhiandroid.foodorderingin.FCM.MyFirebaseInstanceIDService">
+        <service android:name=".FCM.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 
         <!-- ./Firebase Notifications -->
-        <activity android:name="com.abhiandroid.foodorderingin.Activities.AccountVerification"/>
-
+        <activity android:name=".Activities.AccountVerification" />
+        <activity android:name=".Activities.NotifCustomActivity"></activity>
     </application>
 
 </manifest>
